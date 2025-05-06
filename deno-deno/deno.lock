@@ -12,9 +12,9 @@
     "jsr:@std/net@^1.0.4": "1.0.4",
     "jsr:@std/path@^1.0.8": "1.0.8",
     "jsr:@std/streams@^1.0.9": "1.0.9",
-    "npm:emp-wasm-backend@0.4": "0.4.0",
-    "npm:mpc-framework@~0.2.1": "0.2.1",
-    "npm:summon-ts@~0.5.3": "0.5.3"
+    "npm:emp-wasm-engine@~0.5.1": "0.5.1",
+    "npm:mpc-framework@0.3": "0.3.0",
+    "npm:summon-ts@0.6": "0.6.0"
   },
   "jsr": {
     "@std/assert@1.0.12": {
@@ -86,17 +86,17 @@
     "@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3": {
       "integrity": "sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ=="
     },
-    "@noble/hashes@1.7.1": {
-      "integrity": "sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ=="
+    "@noble/hashes@1.8.0": {
+      "integrity": "sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A=="
     },
-    "@types/node@20.17.30": {
-      "integrity": "sha512-7zf4YyHA+jvBNfVrk2Gtvs6x7E8V+YDW05bNfG2XkWDJfYRXrTiP/DsB2zSYTaHX0bGIujTBQdMVAhb+j7mwpg==",
+    "@types/node@20.17.40": {
+      "integrity": "sha512-XNlderXNxSooRdgQFCX2aYoRtHhbUK86Iogm4T7c+pWHbYfVz5frT8ywZ94kXoMjC0f7EReLRiM0tGNtcxXOIA==",
       "dependencies": [
         "undici-types"
       ]
     },
-    "detect-libc@2.0.3": {
-      "integrity": "sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw=="
+    "detect-libc@2.0.4": {
+      "integrity": "sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA=="
     },
     "ee-typed@0.1.1": {
       "integrity": "sha512-atfgRdyoqK/QOY7dqv4jwAi7th45DDX2zRjGgLR8zRgJy7QSLyoS6aI1jZbKf/VIrXy9YTpHFCr8Mzxj//a/KA==",
@@ -105,8 +105,8 @@
         "typed-emitter"
       ]
     },
-    "emp-wasm-backend@0.4.0": {
-      "integrity": "sha512-Jn7ybuzZAWi4PtTxLqrQ/tah0SEOf0XN1V6vF6ygqVDD7vGiEmCyFlI8yNe0tsfn2v6ja97w+h5XL+uhOr75pg==",
+    "emp-wasm-engine@0.5.1": {
+      "integrity": "sha512-qqrEVF4zgXJTKSzGXe7iE3SBQL+aIcq63ui+gA4e6JAtcXj9iP68XH/h8qp8kFLyusgLXw5HrqOcLfRkbCAlcQ==",
       "dependencies": [
         "@msgpack/msgpack",
         "@noble/hashes",
@@ -128,11 +128,11 @@
     "is-plain-obj@4.1.0": {
       "integrity": "sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg=="
     },
-    "mpc-framework-common@0.1.1": {
-      "integrity": "sha512-D+o1vSdFPl9v55c0kgM2dGcUR0IZQn3teeQHA5pWiwjokbMt7uiNHHqQKyrzsY2Y4TfBbVKjnS9yjM6szIO5Ng=="
+    "mpc-framework-common@0.3.0": {
+      "integrity": "sha512-LHKnvcUyVx3Ct3rUJNmkOegApRXl7NtR2Ezi+PbJCqkTdwOca3K8F7JgMOhXyvIqtRW62biETIYWordzCeDVBw=="
     },
-    "mpc-framework@0.2.1": {
-      "integrity": "sha512-fcjBCxBR8bLSmLOYi10WnuySbVBHr5UpCrW5KFxJy+xZoqLX4JJVetOY8OZ7AwGtEIQTMiyU2Wyavw/qkKwvqQ==",
+    "mpc-framework@0.3.0": {
+      "integrity": "sha512-MsMJbw5xYDb37DD8nWfdjmERujlvwpOf2Cy3ixd1s/ZZ/OQPjMNuBW5xY+Q1ZTHAl3ND9NE6RoS0a6c7wWspVg==",
       "dependencies": [
         "ee-typed",
         "mpc-framework-common",
@@ -176,8 +176,8 @@
         "is-plain-obj"
       ]
     },
-    "summon-ts@0.5.3": {
-      "integrity": "sha512-fxuP/SzRxo0HiSp7cItLc7Lr5QkPT66+JfzpMtpLzi6wjESp9d+C2uz/WAkmn7F/3D4vxZPE0K2YdT87IC8EfQ=="
+    "summon-ts@0.6.0": {
+      "integrity": "sha512-mY0Z5gHovzT9Htscj+gBswiLr9ADSMpQplqybuEPvsdCde85Uz2dpCDG8ucffl/6xpVzDEG/JoXbH+SXKzjCqg=="
     },
     "tslib@2.8.1": {
       "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="
@@ -191,17 +191,17 @@
     "undici-types@6.19.8": {
       "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
     },
-    "zod@3.24.2": {
-      "integrity": "sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ=="
+    "zod@3.24.4": {
+      "integrity": "sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg=="
     }
   },
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@^1.0.12",
       "jsr:@std/http@^1.0.14",
-      "npm:emp-wasm-backend@0.4",
-      "npm:mpc-framework@~0.2.1",
-      "npm:summon-ts@~0.5.3"
+      "npm:emp-wasm-engine@~0.5.1",
+      "npm:mpc-framework@0.3",
+      "npm:summon-ts@0.6"
     ]
   }
 }
