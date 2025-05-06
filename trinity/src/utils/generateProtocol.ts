@@ -6,13 +6,13 @@ export default async function generateProtocol() {
   await summon.init();
   const trinityModule = await initTrinity();
 
-  const circuit = summon.compileBoolean(
-    'circuit/main.ts',
-    16,
-    await getCircuitFiles(),
-  );
+  const circuit = summon.compile({
+    path: 'circuit/main.ts',
+    boolifyWidth: 16,
+    files: await getCircuitFiles(),
+  });
 
-  let circuit_parsed = parseCircuit(circuit.circuit.bristol, 16, 16, 16);
+  const circuit_parsed = parseCircuit(circuit.circuit.bristol, 16, 16, 16);
 
   return { trinityModule, circuit_parsed };
 }

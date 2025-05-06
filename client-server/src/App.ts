@@ -33,10 +33,9 @@ export default class App {
     const TOTAL_BYTES = 247331;
     let currentBytes = 0;
 
-    const protocol = await generateProtocol(
-      '/circuit/main.ts',
-      await getCircuitFiles(),
-    );
+    const protocol = await generateProtocol('/circuit/main.ts', {
+      files: await getCircuitFiles(),
+    });
 
     const session = protocol.join('alice', { a: value }, (to, msg) => {
       assert(to === 'bob', 'Unexpected party');

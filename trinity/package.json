@@ -12,14 +12,14 @@
   },
   "dependencies": {
     "@trinity-2pc/core": "^0.1.0",
-    "emp-wasm-backend": "^0.3.1",
+    "emp-wasm-engine": "^0.5.1",
     "events": "^3.3.0",
-    "mpc-framework": "^0.1.4",
+    "mpc-framework": "^0.3.0",
     "next": "15.1.4",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "rtc-pair-socket": "^0.1.5",
-    "summon-ts": "0.5.3"
+    "summon-ts": "0.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",
