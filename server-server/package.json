@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "assert": "^2.1.0",
-    "emp-wasm-backend": "^0.4.0",
-    "mpc-framework": "^0.2.1",
-    "summon-ts": "^0.5.3",
+    "emp-wasm-engine": "^0.5.1",
+    "mpc-framework": "^0.3.0",
+    "summon-ts": "^0.6.0",
     "ws": "^8.18.0"
   },
   "devDependencies": {
