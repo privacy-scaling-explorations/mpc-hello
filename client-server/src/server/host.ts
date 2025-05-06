@@ -18,10 +18,9 @@ wss.on('connection', async ws => {
   ws.on('error', console.error);
 
   // Generate the protocol with mpc-framework.
-  const protocol = await generateProtocol(
-    './src/circuit/main.ts',
-    (filePath: string) => readFileSync(filePath, 'utf8'),
-  );
+  const protocol = await generateProtocol('./src/circuit/main.ts', {
+    readFile: filePath => readFileSync(filePath, 'utf8'),
+  });
 
   // Set the session variable to manage the MPC between two
   // parties: Bob (this server) and Alice.
