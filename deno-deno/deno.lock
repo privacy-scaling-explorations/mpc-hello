@@ -12,7 +12,7 @@
     "jsr:@std/net@^1.0.4": "1.0.4",
     "jsr:@std/path@^1.0.8": "1.0.8",
     "jsr:@std/streams@^1.0.9": "1.0.9",
-    "npm:emp-wasm-engine@~0.5.1": "0.5.1",
+    "npm:emp-wasm-engine@~0.5.2": "0.5.2",
     "npm:mpc-framework@0.3": "0.3.0",
     "npm:summon-ts@0.6": "0.6.0"
   },
@@ -105,8 +105,8 @@
         "typed-emitter"
       ]
     },
-    "emp-wasm-engine@0.5.1": {
-      "integrity": "sha512-qqrEVF4zgXJTKSzGXe7iE3SBQL+aIcq63ui+gA4e6JAtcXj9iP68XH/h8qp8kFLyusgLXw5HrqOcLfRkbCAlcQ==",
+    "emp-wasm-engine@0.5.2": {
+      "integrity": "sha512-3vFKp7BZ/cReK/q/Yc8scn1eR3Uu5dpjBTdtLllWxjRyVOgFoo+5tuXjvpx7Cx7ZQ7IOWsLbaoWYuwOaZFf6RQ==",
       "dependencies": [
         "@msgpack/msgpack",
         "@noble/hashes",
@@ -199,7 +199,7 @@
     "dependencies": [
       "jsr:@std/assert@^1.0.12",
       "jsr:@std/http@^1.0.14",
-      "npm:emp-wasm-engine@~0.5.1",
+      "npm:emp-wasm-engine@~0.5.2",
       "npm:mpc-framework@0.3",
       "npm:summon-ts@0.6"
     ]

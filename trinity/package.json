@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@trinity-2pc/core": "^0.1.0",
-    "emp-wasm-engine": "^0.5.1",
+    "emp-wasm-engine": "^0.5.2",
     "events": "^3.3.0",
     "mpc-framework": "^0.3.0",
     "next": "15.1.4",

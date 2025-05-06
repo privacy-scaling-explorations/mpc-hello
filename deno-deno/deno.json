@@ -6,7 +6,7 @@
   "imports": {
     "@std/assert": "jsr:@std/assert@^1.0.12",
     "@std/http": "jsr:@std/http@^1.0.14",
-    "emp-wasm-engine": "npm:emp-wasm-engine@^0.5.1",
+    "emp-wasm-engine": "npm:emp-wasm-engine@^0.5.2",
     "mpc-framework": "npm:mpc-framework@^0.3.0",
     "summon-ts": "npm:summon-ts@^0.6.0"
   }
