@@ -12,14 +12,14 @@
   },
   "dependencies": {
     "ee-typed": "^0.1.1",
-    "emp-wasm-backend": "^0.4.0",
+    "emp-wasm-engine": "^0.5.1",
     "events": "^3.3.0",
-    "mpc-framework": "^0.2.1",
+    "mpc-framework": "^0.3.0",
     "next": "^15.3.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "rtc-pair-socket": "^0.1.7",
-    "summon-ts": "0.5.3"
+    "summon-ts": "0.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",
