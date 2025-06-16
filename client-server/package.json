@@ -12,10 +12,10 @@
     "format:fix": "prettier -w ."
   },
   "dependencies": {
-    "emp-wasm-engine": "^0.5.2",
+    "emp-wasm-engine": "^0.5.3",
     "events": "^3.3.0",
     "mpc-framework": "^0.3.0",
-    "summon-ts": "^0.6.0",
+    "summon-ts": "^0.6.1",
     "ws": "^8.18.0"
   },
   "devDependencies": {
